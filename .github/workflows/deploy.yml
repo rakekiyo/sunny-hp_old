@@ -13,7 +13,6 @@ jobs:
       - name: Deploy to xfree
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          protocol: ftps-legacy
-          server: ${{ secrets.FTP_SERVER }}     
-          username: ${{ secrets.FTP_USERNAME }} 
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
