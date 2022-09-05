@@ -6,13 +6,13 @@ on:
       - main
 jobs:
   FTP-deploy-job:
-    name: FTP-deploy-job
+    name: Deploy-job
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - name: Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
-        env:                                        
+        with:                                        
           server: ${{ secrets.FTP_SERVER }}     
           username: ${{ secrets.FTP_USERNAME }} 
           password: ${{ secrets.FTP_PASSWORD }}
