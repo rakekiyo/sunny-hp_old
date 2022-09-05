@@ -1,0 +1,19 @@
+name: Build and Deploy
+on:
+  push:                 
+    branches:           
+      - main
+jobs:
+  FTP-deploy-job:
+    name: FTP-deploy-job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        env:                                        
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}     
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }} 
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }} 
+          LOCAL_DIR: ./                           
+          REMOTE_DIR: ""
