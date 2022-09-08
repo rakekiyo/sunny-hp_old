@@ -4,9 +4,9 @@
 
 プロジェクトを作成
 > `npx create-react-app my-app`
+> `cd my-app`  
 
 サーバーを起動
-> `cd my-app`  
 > `npm start`
 
 ビルド
