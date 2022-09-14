@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import lightBlue from '@material-ui/core/colors/lightBlue';
-import deepOrange from '@material-ui/core/colors/deepOrange';
+import yellow from '@material-ui/core/colors/yellow';
 import Header from './Header.js';
 import ContentTop from './Contents.js';
 import './fonts/setofont.css'
@@ -13,13 +13,13 @@ const theme = createTheme({
       contrastText: '#ffffff',
     },
     secondary: {
-      main: deepOrange[100],
+      main: yellow[100],
     },
   },
   typography: {
     fontFamily: 'SetoFont, Arial'
   },
-});
+  });
 
 function App() {
   return (

@@ -1,6 +1,4 @@
-#ref: https://github.com/nodejs/docker-node/blob/main/README.md#how-to-use-this-image
-version: "2"
-services:
+# Create-React-App用の開発環境
   node:
     image: "node:16.17.0"
     # user: "node"
