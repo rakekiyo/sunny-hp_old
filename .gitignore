@@ -1,4 +1,3 @@
 blazor-app/obj
-blazor-app/bin
-# blazor-app/bin/*/net6.0/*\.*
-# blazor-app/bin/*/net6.0/wwwroot
+blazor-app/bin/*/net6.0/*\.*
+blazor-app/bin/*/net6.0/wwwroot
