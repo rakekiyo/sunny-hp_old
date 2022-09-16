@@ -1,3 +1,4 @@
+.vscode/*
 blazor-app/obj
 blazor-app/bin/*/net6.0/*\.*
 blazor-app/bin/*/net6.0/wwwroot
