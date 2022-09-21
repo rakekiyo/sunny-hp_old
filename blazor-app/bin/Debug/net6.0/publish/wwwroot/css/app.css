@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'SetoFont';
-    src: url('./sp-setofont.ttf');
+    src: url('./sp-setofont.woff') format('woff');
 }
 
 html,
@@ -16,8 +16,9 @@ hr {
 
 .navbar-brand,
 h1,
-h2 {
-    font-family: 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h2,
+.SetoFont {
+    font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1:focus {
