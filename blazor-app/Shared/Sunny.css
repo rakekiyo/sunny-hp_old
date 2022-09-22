@@ -1,0 +1,8 @@
+@import url(./font/SetoFont.css);
+
+.navbar-brand,
+h1,
+h2,
+.SetoFont {
+    font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
