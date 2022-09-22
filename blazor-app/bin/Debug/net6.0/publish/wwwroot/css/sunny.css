@@ -19,10 +19,25 @@ hr {
 
 .sunny-menu-item {
 	width: 30%;
-	height: 300px;
 	/* background-color: royalblue; */
 	padding: 10px;
 	margin: 5px;
+}
+
+@media screen and (max-width: 959px) {
+
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.sunny-menu-item {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.sunny-menu-item {
+		width: 100%;
+	}
 }
 
 .sunny-card {
