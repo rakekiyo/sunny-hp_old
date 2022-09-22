@@ -1,6 +1,6 @@
 ﻿@import url(./font/SetoFont.css);
 
-.sunny-logo
+.sunny-logo,
 .sunny-title,
 .sunny-subtitle {
     font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8,4 +8,23 @@
 
 hr {
     color: red;
+}
+
+.sunny-menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	padding: 10px;
+}
+.sunny-menu-item {
+	width: 30%;
+	height: 300px;
+	/* background-color: royalblue; */
+	padding: 10px;
+    margin: 5px;
+}
+
+.sunny-card {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
 }
