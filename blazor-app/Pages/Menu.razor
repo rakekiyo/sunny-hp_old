@@ -3,59 +3,89 @@
 
 <PageTitle>menu</PageTitle>
 
-<section class="sunny-title">
-<h1>メニュー</h1>
+<section>
+  <h1 class="sunny-title">メニュー</h1>
 </section>
 
-<p>Comming soon...</p>
+<section>
+  <p>表示価格は税別価格です。</p>
+  <p>初めての方はお時間+30分と初診料¥1,100頂戴致します。</p>
+  <p>完全予約制です。ご予約をお願い致します♪</p>
+</section>
+
+<section>
+  <h2 class="sunny-subtitle">身体調整</h2>
+  <hr>
+  <div class="sunny-menu-container">
+    <h3 class="sunny-menu-title">全身調整（60分）¥4,950</h3>
+    <div class="sunny-menu-content">
+      <p>骨盤を中心に整え、肩や腰、首も整えます♪</p>
+      <p>こんな人にオススメです( ･ᴗ･ )♡</p>
+      <ul>
+        <li>肩がこってガチガチの方</li>
+        <li>腰痛持ちの方</li>
+        <li>猫背が気になる方</li>
+        <li>ストレートネックで首に痛みがある方</li>
+        <li>足のむくみが気になる方</li>
+        <li>お疲れ、疲れやすい方など</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sunny-subtitle">エステ</h2>
+  <hr>
+  <div class="sunny-menu-container"></div>
+</section>
 
 @* <p>This component demonstrates fetching data from the server.</p>
 
-@if (forecasts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+  @if (forecasts == null)
+  {
+  <p><em>Loading...</em></p>
+  }
+  else
+  {
+  <table class="table">
+  <thead>
+  <tr>
+  <th>Date</th>
+  <th>Temp. (C)</th>
+  <th>Temp. (F)</th>
+  <th>Summary</th>
+  </tr>
+  </thead>
+  <tbody>
+  @foreach (var forecast in forecasts)
+  {
+  <tr>
+  <td>@forecast.Date.ToShortDateString()</td>
+  <td>@forecast.TemperatureC</td>
+  <td>@forecast.TemperatureF</td>
+  <td>@forecast.Summary</td>
+  </tr>
+  }
+  </tbody>
+  </table>
+  }
 
-@code {
-    private WeatherForecast[]? forecasts;
+  @code {
+  private WeatherForecast[]? forecasts;
 
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-    }
+  protected override async Task OnInitializedAsync()
+  {
+  forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+  }
 
-    public class WeatherForecast
-    {
-        public DateTime Date { get; set; }
+  public class WeatherForecast
+  {
+  public DateTime Date { get; set; }
 
-        public int TemperatureC { get; set; }
+  public int TemperatureC { get; set; }
 
-        public string? Summary { get; set; }
+  public string? Summary { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-    }
-} *@
+  public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+  }
+  } *@

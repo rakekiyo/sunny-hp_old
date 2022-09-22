@@ -1,8 +1,8 @@
 ﻿@import url(./font/SetoFont.css);
 
 .sunny-logo
-.sunny-title h1,
-.sunny-section h2 {
+.sunny-title,
+.sunny-subtitle {
     font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
