@@ -24,6 +24,11 @@ hr {
 	margin: 5px;
 }
 
+.sunny-card {
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #ccc;
+}
+
 @media screen and (max-width: 959px) {
 
 	/* 959px以下に適用されるCSS（タブレット用） */
@@ -39,10 +44,3 @@ hr {
 		width: 100%;
 	}
 }
-
-.sunny-card {
-	border-radius: 5px;
-	box-shadow: 0 2px 5px #ccc;
-}
-
-.sunny-reference {}
