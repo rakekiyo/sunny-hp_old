@@ -1,6 +1,6 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand sunny-logo" href="">カイロ&エステ sunny☀</a>
+        <a class="navbar-brand sunny-logo" href="">sunny☀</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,17 +11,20 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                @* <span class="oi oi-home" aria-hidden="true"></span> *@
+                <span class="sunny-nav-item">Home</span>
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="about">
-                <span class="oi oi-plus" aria-hidden="true"></span> カイロプラクティックとは
+                @* <span class="oi oi-plus" aria-hidden="true"></span> *@
+                <span class="sunny-nav-item">カイロプラクティックとは</span>
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="menu">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> メニュー
+                @* <span class="oi oi-list-rich" aria-hidden="true"></span> *@
+                <span class="sunny-nav-item">メニュー</span>
             </NavLink>
         </div>
     </nav>

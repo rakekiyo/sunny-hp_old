@@ -7,8 +7,16 @@
 	font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-hr {
-	color: red;
+.sunny-title {
+	color: crimson;
+	font-style: bold;
+	margin-bottom: 20px;
+}
+
+.sunny-subtitle {
+	border-bottom: 3px solid crimson;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .sunny-menu-container {
