@@ -1,0 +1,55 @@
+﻿@import url(./font/SetoFont.css);
+
+.sunny-loading,
+.sunny-logo,
+.sunny-title,
+.sunny-subtitle {
+	font-family: '瀬戸フォント-SP', 'SetoFont', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.sunny-title {
+	color: crimson;
+	font-style: bold;
+	margin-bottom: 20px;
+}
+
+.sunny-subtitle {
+	border-bottom: 3px solid crimson;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sunny-menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	padding: 10px;
+}
+
+.sunny-menu-item {
+	width: 30%;
+	/* background-color: royalblue; */
+	padding: 10px;
+	margin: 5px;
+}
+
+.sunny-card {
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #ccc;
+}
+
+@media screen and (max-width: 959px) {
+
+	/* 959px以下に適用されるCSS（タブレット用） */
+	.sunny-menu-item {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	/* 480px以下に適用されるCSS（スマホ用） */
+	.sunny-menu-item {
+		width: 100%;
+	}
+}
