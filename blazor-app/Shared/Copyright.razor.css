@@ -1,0 +1,10 @@
+﻿.copytright {
+    background-color: black;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.copytright p {
+    color: white;
+    text-align: center;
+}
