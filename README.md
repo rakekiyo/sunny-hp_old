@@ -19,7 +19,11 @@
 > `dotnet build (--configuration Release)`
 
 発行
->`dotnet publish (--configuration Release)`
+>`dotnet publish`
+Github Pagesに発行
+>`dotnet publish -o ../doc`
+リリースとして発行
+>`dotnet publish -c Release`
 
 ## React
 

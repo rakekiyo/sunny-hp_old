@@ -16,5 +16,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./blazor-app/bin/Debug/net6.0/publish/wwwroot/
+          local-dir: ./blazor-app/bin/Release/net6.0/publish/wwwroot/
           server-dir: /home/chiro-sunny/www/
