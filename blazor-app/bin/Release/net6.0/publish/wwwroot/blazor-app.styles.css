@@ -1,3 +1,8 @@
+/* /Shared/Copyright.razor.rz.scp.css */
+.copyright p[b-oqlx74sq3r] {
+    color: white;
+    text-align: center;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-1lns6lcjt1] {
     position: relative;
@@ -37,6 +42,12 @@ main[b-1lns6lcjt1] {
 .top-row[b-1lns6lcjt1]  a:first-child {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.footer[b-1lns6lcjt1] {
+    width: 100%;
+    height: 1.5rem;
+    background-color: black;
 }
 
 @media (max-width: 640.98px) {
